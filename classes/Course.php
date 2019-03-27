@@ -21,7 +21,10 @@
                 $start = strtotime("+1 day", $start);
             }
 
-            $this->cost = 5 * $day_count;
+            # Daily cost
+            $day_cost = 5;
+
+            $this->cost = $day_cost * $day_count;
             $this->days = $day_count;
 
             # Insert
